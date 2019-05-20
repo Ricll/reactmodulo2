@@ -38,20 +38,41 @@ export const Repository = styled.div`
 
   ul {
     list-style: none;
-  }
+    li {
+      font-weight: bold;
+      padding: 12px 20px;
 
-  li {
-    font-weight: bold;
-    padding: 12px 20px;
-
-    small {
-      font-weight: normal;
-      font-size: 14px;
-      font-style: italic;
-      color: #999;
+      small {
+        font-weight: normal;
+        font-size: 14px;
+        font-style: italic;
+        color: #999;
+      }
+      &:nth-child(2n - 1) {
+        background: #f5f5f5;
+      }
     }
-    &:nth-child(2n - 1) {
-      background: #f5f5f5;
+  }
+  div.removeBtn {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+
+    button {
+      width: 80px;
+      height: 40px;
+      padding: 0 10px;
+      margin-left: 10px;
+      background: #63f5b0;
+      color: #444;
+      border: 0;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 3px;
+
+      &:hover {
+        background: #52d89f;
+      }
     }
   }
 `;
