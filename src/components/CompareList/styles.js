@@ -68,7 +68,7 @@ export const Repository = styled.div`
       border: 0;
       font-size: 14px;
       font-weight: bold;
-      border-radius: 3px;
+      border-radius: 4px;
 
       &:hover {
         background: #52d89f;
